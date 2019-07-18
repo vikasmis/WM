@@ -1,0 +1,43 @@
+<form class="center_div" *ngIf="">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="text" class=" col-3 form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
+            minlength="5" maxlength="8">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+    </div>
+    <div class="">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="col-3 form-control" id="exampleInputEmail1" required minlength="5" maxlength="17">
+    </div>
+    <div class="">
+        <label for="Lastname">Last Name</label>
+        <input type="text" class="col-3 form-control" id="exampleInputEmail1" required minlength="5" maxlength="17">
+    </div>
+    <div class="form-group">
+        <label for="EmailID">Email ID</label>
+        <input type="email" class="col-3 form-control" id="exampleInputEmail1" minlength="5" maxlength="17">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input [type]="show ? 'text' : 'password'" type="password" placeholder="Repeat Password"
+            class="col-3 form-control" id="exampleInputPassword1" placeholder="Password" required>
+        <input type="checkbox" (click)="password()">Show Password
+    </div>
+    <div class="form-group">
+        <label for="exampleInputRepeatPassword1">Repeat Password</label>
+        <input type="Repeatpassword" class="col-3 form-control" id="exampleInputRepeatPassword1"
+            placeholder="Repeat Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="text-center navbar-inner" *ngIf="show">
+    <ul class="nav nav-tabs">
+        <li><a href="#Home" data-toggle="tab">Home</a></li>
+        <li><a href="#About" data-toggle="tab">About</a></li>
+        <li><a href="#Buyer" data-toggle="tab">Buyer Details</a></li>
+        <li><a href="#Suppier" data-toggle="tab">Supplier Details</a></li>
+        <li><a href="#Ref" data-toggle="tab">References</a></li>
+        <li><a href="#Contact" data-toggle="tab">Contact</a></li>
+    </ul>
+</div>
