@@ -12,6 +12,9 @@ export class AppComponent {
   show: boolean;
   defaultUserName: string;
   EnteredUsernName: string;
+  options=["BUYER","SELLER"]
+  selectedOption:string;
+  name='';
   constructor() {
     this.show = false;
     this.defaultUserName = 'vikash';
