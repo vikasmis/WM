@@ -13,3 +13,28 @@ h3 {
   margin: 0 auto;
   width:80% /* value of your choice which suits your alignment */
 }
+/* tooltip link */
+
+.tip {
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* tooltip content */
+
+.tooltip h2 {
+	white-space: nowrap;
+}
+
+/* demo styles */
+
+.container {
+	padding-top: 150px;
+}
+.append {
+	margin-left: 1em;
+}
+li {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
